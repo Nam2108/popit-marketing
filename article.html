@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="POPIT Insights - Kiến thức Digital Marketing thực tế cho doanh nghiệp.">
+  <title>POPIT Insights</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="article-page">
+  <header class="navbar article-navbar">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html#home" aria-label="POPIT Marketing Solution">
+        <span class="logo-mark" aria-hidden="true"><span class="logo-star"></span></span>
+        <span class="logo-lockup"><span class="logo-word">POPIT<sup>TM</sup></span><small>MARKETING SOLUTION</small></span>
+      </a>
+      <nav class="nav-menu article-nav-menu">
+        <a href="index.html#services">Dịch vụ</a>
+        <a href="index.html#pricing">Bảng giá</a>
+        <a href="index.html#contact">Liên hệ</a>
+      </nav>
+      <a class="btn btn-primary nav-cta" href="index.html#contact">Nhận tư vấn</a>
+    </div>
+  </header>
+
+  <main class="article-main">
+    <section class="article-hero">
+      <div class="container article-hero-grid">
+        <div class="article-hero-copy">
+          <a class="article-back" href="index.html#insights">← Quay lại Insights</a>
+          <div class="article-meta"><span class="insight-tag" id="articleCategory"></span><span id="articleDate"></span><span id="articleReadTime"></span></div>
+          <h1 class="article-title" id="articleTitle"></h1>
+          <p class="article-lead" id="articleLead"></p>
+        </div>
+        <img class="article-cover" id="articleCover" src="" alt="">
+      </div>
+    </section>
+
+    <section class="article-layout">
+      <article class="article-body" id="articleBody"></article>
+      <aside class="article-aside">
+        <div class="article-aside-box">
+          <h3>Muốn biến kiến thức thành kết quả?</h3>
+          <p>POPIT giúp bạn chọn đúng kênh, xây dựng chiến lược và tối ưu chiến dịch theo mục tiêu kinh doanh.</p>
+          <a class="btn btn-solution" href="index.html#contact">Trao đổi với POPIT →</a>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <section class="article-related">
+    <div class="container">
+      <div class="article-related-heading">
+        <h2>Bài viết liên quan</h2>
+        <a href="index.html#insights">Xem tất cả bài viết →</a>
+      </div>
+      <div class="article-related-grid" id="relatedPosts"></div>
+    </div>
+  </section>
+
+  <footer class="footer article-footer">
+    <div class="container footer-grid">
+      <div><a class="logo footer-logo" href="index.html#home"><span class="logo-mark" aria-hidden="true"><span class="logo-star"></span></span><span class="logo-lockup"><span class="logo-word">POPIT<sup>TM</sup></span><small>MARKETING SOLUTION</small></span></a><p>Giải pháp Digital Marketing giúp doanh nghiệp tiếp cận khách hàng và tăng trưởng có hệ thống.</p></div>
+      <div><h4>DỊCH VỤ</h4><a href="index.html#pricing">Facebook Ads</a><a href="index.html#pricing">TikTok Ads</a><a href="index.html#pricing">Google Ads</a><a href="index.html#pricing">Website</a></div>
+      <div><h4>HỖ TRỢ</h4><a href="index.html#process">Quy trình</a><a href="index.html#contact">Liên hệ</a></div>
+      <div><h4>LIÊN HỆ</h4><p>Hotline: 0900 000 000</p><p>Email: hello@popit.vn</p><p>Hà Nội, Việt Nam</p></div>
+    </div>
+    <div class="container copyright">© 2026 POPIT. All rights reserved.</div>
+  </footer>
+
+  <script>
+    const posts = {
+      "facebook-ads": {
+        category: "FACEBOOK ADS",
+        date: "12/09/2026",
+        readTime: "5 phút đọc",
+        title: "3 sai lầm khiến chi phí quảng cáo tăng nhưng hiệu quả không lên.",
+        lead: "Chi phí tăng không phải lúc nào cũng vì thị trường đắt hơn. Trong nhiều trường hợp, vấn đề nằm ở mục tiêu, thông điệp và cách bạn đọc dữ liệu chiến dịch.",
+        image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1400&q=86",
+        alt: "Đội ngũ marketing đang phân tích chiến dịch quảng cáo",
+        body: `<h2>Đừng bắt đầu bằng việc tăng ngân sách</h2><p>Khi một chiến dịch không đạt kết quả, phản xạ phổ biến là tăng ngân sách để tìm thêm khách hàng. Cách làm này chỉ khuếch đại vấn đề nếu quảng cáo đang nhắm sai người hoặc landing page chưa thuyết phục.</p><p>Trước khi tăng chi phí, hãy nhìn lại toàn bộ hành trình từ lúc khách hàng thấy quảng cáo đến lúc họ để lại thông tin.</p><div class="article-note"><strong>Nguyên tắc nhanh:</strong> Chỉ tăng ngân sách khi quảng cáo đã có tín hiệu ổn định về CTR, tỷ lệ chuyển đổi và chi phí trên mỗi kết quả.</div><h2>Ba sai lầm thường gặp</h2><ul><li><strong>Chọn mục tiêu không phù hợp:</strong> Tối ưu lượt tương tác khi mục tiêu thật sự là thu lead sẽ tạo ra nhiều tín hiệu đẹp nhưng ít khách hàng.</li><li><strong>Dùng một nội dung cho mọi nhóm khách:</strong> Người mới biết thương hiệu cần một thông điệp khác với người đã xem sản phẩm hoặc từng nhắn tin.</li><li><strong>Đọc sai chỉ số:</strong> CTR cao chưa có nghĩa là chiến dịch hiệu quả nếu tỷ lệ chuyển đổi sau click thấp.</li></ul><h2>Cách kiểm tra trước khi tối ưu</h2><p>Hãy chia chiến dịch thành ba điểm kiểm tra: chất lượng traffic, mức độ phù hợp của landing page và khả năng chốt của đội ngũ tư vấn. Mỗi điểm cần một chỉ số chính để tránh tối ưu theo cảm tính.</p><p>Khi đã xác định đúng nút thắt, bạn mới nên thử creative mới, điều chỉnh audience hoặc phân bổ lại ngân sách. Tối ưu tốt là quá trình loại bỏ lãng phí từng bước, không phải thay đổi mọi thứ cùng lúc.</p>`
+      },
+      "landing-page": {
+        category: "TIKTOK",
+        date: "08/09/2026",
+        readTime: "4 phút đọc",
+        title: "Landing page cho TikTok nên tối ưu như thế nào để tăng conversion?",
+        lead: "Người dùng TikTok quyết định rất nhanh. Landing page cần tiếp nối đúng mạch cảm xúc từ video và giúp họ hiểu, tin tưởng rồi hành động ngay.",
+        image: "https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=1400&q=86",
+        alt: "Thiết kế landing page trên màn hình máy tính",
+        body: `<h2>Landing page phải tiếp nối câu chuyện của video</h2><p>Video TikTok tạo ra sự chú ý trong vài giây, nhưng landing page mới là nơi biến sự chú ý đó thành hành động. Nếu người dùng thấy một lời hứa trong video rồi gặp một trang web chung chung, họ sẽ rời đi rất nhanh.</p><p>Hãy giữ lại cùng một ngôn ngữ, lợi ích chính và hình ảnh chủ đạo giữa video quảng cáo và trang đích.</p><div class="article-note"><strong>Quy tắc 5 giây:</strong> Trong 5 giây đầu, khách truy cập phải biết bạn bán gì, sản phẩm giúp họ điều gì và cần bấm vào đâu.</div><h2>Bốn phần không nên thiếu</h2><ul><li><strong>Headline rõ lợi ích:</strong> Nói thẳng kết quả khách hàng nhận được thay vì chỉ mô tả tính năng.</li><li><strong>Bằng chứng tin cậy:</strong> Đưa review, số liệu, hình ảnh thật hoặc quy trình minh bạch lên gần phần CTA.</li><li><strong>CTA nổi bật:</strong> Mỗi màn hình nên có một hành động chính, chẳng hạn đăng ký tư vấn hoặc nhận ưu đãi.</li><li><strong>Thiết kế mobile-first:</strong> Kiểm tra tốc độ tải, kích thước chữ và thao tác bằng một tay trên điện thoại.</li></ul><h2>Tối ưu bằng dữ liệu</h2><p>Đừng đoán phần nào đang hiệu quả. Theo dõi tỷ lệ cuộn trang, lượt bấm CTA, thời gian trên trang và tỷ lệ hoàn thành form. Sau đó thử từng thay đổi nhỏ để biết yếu tố nào thật sự tạo ra chuyển đổi.</p>`
+      },
+      "seo-cro": {
+        category: "SEO & CRO",
+        date: "03/09/2026",
+        readTime: "6 phút đọc",
+        title: "5 chỉ số cần theo dõi để biết landing page đang “đi đúng hướng”.",
+        lead: "Một landing page đẹp chưa chắc đã hiệu quả. Năm chỉ số dưới đây giúp bạn nhìn thấy chính xác khách hàng đang dừng lại ở đâu trong hành trình chuyển đổi.",
+        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1400&q=86",
+        alt: "Biểu đồ dữ liệu marketing trên màn hình",
+        body: `<h2>Bắt đầu từ hành vi, không chỉ từ lượt truy cập</h2><p>Lượng traffic cho biết có bao nhiêu người ghé thăm, nhưng chưa nói họ có quan tâm hay không. Một landing page tốt cần được đọc cùng nhiều chỉ số để phân biệt traffic chất lượng và traffic chỉ tạo ra con số.</p><h2>Năm chỉ số quan trọng</h2><ul><li><strong>CTR:</strong> Cho biết tiêu đề và lời kêu gọi có đủ hấp dẫn để người dùng bấm vào hay không.</li><li><strong>Conversion rate:</strong> Tỷ lệ người hoàn thành mục tiêu, thường là gửi form, gọi điện hoặc đặt lịch.</li><li><strong>CPA:</strong> Chi phí cho mỗi khách hàng tiềm năng, giúp đánh giá hiệu quả ngân sách.</li><li><strong>Thời gian trên trang:</strong> Thời gian quá ngắn có thể báo hiệu nội dung chưa đúng kỳ vọng.</li><li><strong>Tỷ lệ thoát:</strong> Nếu cao ở một phần cụ thể, hãy kiểm tra lại tốc độ tải, nội dung hoặc CTA.</li></ul><div class="article-note"><strong>Đừng tối ưu một chỉ số đơn lẻ.</strong> CTR tăng nhưng conversion rate giảm có thể khiến chi phí thật sự trên mỗi khách hàng cao hơn.</div><h2>Biến dữ liệu thành hành động</h2><p>Mỗi tuần, hãy chọn một điểm nghẽn lớn nhất để thử nghiệm. Có thể là headline, form, hình ảnh sản phẩm hoặc bằng chứng xã hội. Ghi lại giả thuyết, thay đổi và kết quả để đội ngũ tích lũy được một hệ thống tối ưu có thể lặp lại.</p>`
+      },
+      "google-ads": {
+        category: "GOOGLE ADS",
+        date: "28/08/2026",
+        readTime: "5 phút đọc",
+        title: "Google Ads: Chọn từ khóa theo nhu cầu thật của khách hàng.",
+        lead: "Không phải lượt tìm kiếm nào cũng có giá trị như nhau. Phân loại đúng ý định giúp quảng cáo xuất hiện khi khách hàng đã sẵn sàng tìm hiểu hoặc mua.",
+        image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1400&q=86",
+        alt: "Nhóm marketing đang làm việc với dữ liệu tìm kiếm",
+        body: `<h2>Từ khóa phải gắn với một hành động</h2><p>Một từ khóa có lượng tìm kiếm lớn chưa chắc mang lại doanh thu. Điều quan trọng là người tìm kiếm đang muốn biết thêm, so sánh hay mua ngay.</p><p>Hãy lập nhóm từ khóa theo ý định trước khi viết mẫu quảng cáo và chọn landing page. Cách này giúp thông điệp phù hợp hơn với từng giai đoạn.</p><h2>Ba nhóm ý định cần phân biệt</h2><ul><li><strong>Khám phá:</strong> Người dùng đang tìm hiểu vấn đề và cần nội dung giáo dục.</li><li><strong>So sánh:</strong> Họ đã biết giải pháp và đang cân nhắc thương hiệu, tính năng hoặc giá.</li><li><strong>Hành động:</strong> Các cụm như “báo giá”, “đăng ký” hoặc “gần tôi” thường có tín hiệu mua cao.</li></ul><div class="article-note"><strong>Mẹo nhỏ:</strong> Xem báo cáo cụm từ tìm kiếm hàng tuần để loại từ khóa không liên quan và bổ sung những cụm có chuyển đổi.</div><h2>Tối ưu cả sau cú click</h2><p>Quảng cáo chỉ là điểm bắt đầu. Landing page cần lặp lại đúng nhu cầu trong từ khóa, đưa ra bằng chứng tin cậy và có CTA rõ ràng. Khi ba phần này khớp nhau, Quality Score và hiệu quả ngân sách thường được cải thiện.</p>`
+      },
+      "content-funnel": {
+        category: "CONTENT",
+        date: "24/08/2026",
+        readTime: "6 phút đọc",
+        title: "Content funnel là gì và vì sao doanh nghiệp cần một hệ thống?",
+        lead: "Nội dung hiệu quả không chỉ là đăng bài đều đặn. Mỗi nội dung nên có một vai trò rõ ràng trong hành trình từ nhận biết đến mua hàng.",
+        image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1400&q=86",
+        alt: "Đội ngũ đang lên kế hoạch nội dung marketing",
+        body: `<h2>Một bài viết không thể làm mọi nhiệm vụ</h2><p>Người mới biết đến thương hiệu cần câu trả lời đơn giản và hữu ích. Người đã quan tâm lại cần case study, review hoặc tư vấn cụ thể. Nếu dùng cùng một thông điệp cho tất cả, nội dung sẽ khó thuyết phục ở bất kỳ giai đoạn nào.</p><h2>Ba tầng của content funnel</h2><ul><li><strong>Nhận biết:</strong> Nội dung giải thích vấn đề, xu hướng và câu hỏi khách hàng thường gặp.</li><li><strong>Cân nhắc:</strong> Nội dung so sánh, hướng dẫn, case study và giải đáp phản đối.</li><li><strong>Chuyển đổi:</strong> Bảng giá, demo, ưu đãi hoặc lời mời tư vấn rõ ràng.</li></ul><div class="article-note"><strong>Mỗi nội dung cần một CTA.</strong> CTA có thể là đọc bài tiếp theo ở tầng nhận biết, tải tài liệu ở tầng cân nhắc hoặc đặt lịch ở tầng chuyển đổi.</div><h2>Lập lịch nội dung dễ thực hiện</h2><p>Bắt đầu với một chủ đề lớn mỗi tháng, sau đó tách thành các bài ngắn cho từng tầng. Theo dõi lượt lưu, lượt truy cập chất lượng và số lead để biết nội dung nào nên được phát triển thêm.</p>`
+      },
+      "brand-small-business": {
+        category: "BRANDING",
+        date: "19/08/2026",
+        readTime: "4 phút đọc",
+        title: "Doanh nghiệp nhỏ nên bắt đầu xây thương hiệu từ đâu?",
+        lead: "Thương hiệu không bắt đầu từ một bộ nhận diện đắt tiền, mà từ lời hứa rõ ràng và trải nghiệm nhất quán.",
+        image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1400&q=86",
+        alt: "Bàn làm việc với tài liệu xây dựng thương hiệu",
+        body: `<h2>Thương hiệu là lý do khách hàng nhớ đến bạn</h2><p>Với doanh nghiệp nhỏ, thương hiệu giúp giảm cảm giác rủi ro khi khách hàng chưa từng mua. Họ cần hiểu bạn khác gì, phục vụ ai và có thể tin tưởng ở điểm nào.</p><h2>Bắt đầu từ ba câu hỏi</h2><ul><li><strong>Khách hàng lý tưởng là ai?</strong> Viết cụ thể nhu cầu, bối cảnh và vấn đề họ đang muốn giải quyết.</li><li><strong>Lời hứa của bạn là gì?</strong> Một câu ngắn, dễ nhớ và có thể chứng minh bằng trải nghiệm thật.</li><li><strong>Điểm khác biệt nào đáng tin?</strong> Có thể là tốc độ, chuyên môn, quy trình hoặc cách chăm sóc.</li></ul><div class="article-note"><strong>Nhất quán quan trọng hơn cầu kỳ.</strong> Cách viết, màu sắc, hình ảnh và thái độ tư vấn nên cùng truyền tải một cảm giác.</div><h2>Đưa thương hiệu vào từng điểm chạm</h2><p>Kiểm tra từ quảng cáo, website, tin nhắn đến sau bán hàng. Khi khách hàng nhận được cùng một lời hứa ở mọi nơi, thương hiệu sẽ dần trở nên đáng nhớ và đáng tin hơn.</p>`
+      },
+      "remarketing": {
+        category: "REMARKETING",
+        date: "14/08/2026",
+        readTime: "5 phút đọc",
+        title: "Remarketing đúng cách: Đừng bám đuổi khách hàng một cách máy móc.",
+        lead: "Không phải ai từng ghé website cũng cần nhìn thấy cùng một quảng cáo. Phân nhóm theo hành vi giúp remarketing hữu ích và tiết kiệm hơn.",
+        image: "https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=1400&q=86",
+        alt: "Nhân sự marketing theo dõi hiệu quả chiến dịch",
+        body: `<h2>Remarketing là cuộc trò chuyện tiếp theo</h2><p>Khách hàng có thể rời website vì chưa sẵn sàng, chưa hiểu sản phẩm hoặc chỉ đang so sánh. Một quảng cáo tốt cần trả lời đúng lý do đó thay vì chỉ nhắc họ quay lại.</p><h2>Phân nhóm trước khi chạy</h2><ul><li><strong>Đã xem trang sản phẩm:</strong> Nhắc lại lợi ích, review và câu hỏi thường gặp.</li><li><strong>Đã thêm vào giỏ hoặc điền form:</strong> Đưa ra hỗ trợ, ưu đãi có thời hạn hoặc lời mời tư vấn.</li><li><strong>Đã mua hàng:</strong> Gợi ý sản phẩm bổ sung, chăm sóc sau mua hoặc chương trình giới thiệu.</li></ul><div class="article-note"><strong>Đặt giới hạn tần suất.</strong> Một quảng cáo lặp lại quá nhiều lần sẽ làm giảm thiện cảm và khiến ngân sách bị tiêu vào những người không còn nhu cầu.</div><h2>Đo hiệu quả đúng cách</h2><p>Đừng chỉ nhìn số lượt hiển thị. So sánh chi phí trên mỗi chuyển đổi, doanh thu gia tăng và thời gian từ lần ghé đầu tiên đến lần mua. Đây mới là cơ sở để quyết định nhóm remarketing nào đáng đầu tư.</p>`
+      },
+      "email-marketing": {
+        category: "EMAIL",
+        date: "09/08/2026",
+        readTime: "4 phút đọc",
+        title: "Email marketing: Cách giữ liên lạc sau khi khách hàng để lại thông tin.",
+        lead: "Một chuỗi email ngắn, đúng ngữ cảnh có thể giúp thương hiệu tăng tin tưởng trước khi cuộc tư vấn bắt đầu.",
+        image: "https://images.unsplash.com/photo-1557200134-90327ee9fafa?auto=format&fit=crop&w=1400&q=86",
+        alt: "Email marketing được mở trên máy tính",
+        body: `<h2>Lead chưa phải là khách hàng</h2><p>Ngay sau khi để lại thông tin, khách hàng thường cần thêm lý do để tin tưởng. Email là cách giữ liên lạc có chủ đích mà không phụ thuộc hoàn toàn vào thuật toán của nền tảng quảng cáo.</p><h2>Một chuỗi email cơ bản</h2><ul><li><strong>Email xác nhận:</strong> Gửi đúng tài liệu hoặc thông tin đã hứa và nói rõ bước tiếp theo.</li><li><strong>Email hữu ích:</strong> Chia sẻ một hướng dẫn nhỏ giúp khách hàng giải quyết vấn đề.</li><li><strong>Email bằng chứng:</strong> Đưa case study, review hoặc quy trình làm việc thực tế.</li><li><strong>Email mời hành động:</strong> Đề xuất tư vấn, demo hoặc ưu đãi phù hợp.</li></ul><div class="article-note"><strong>Viết như một người đang tư vấn.</strong> Một email có ích và đúng thời điểm thường hiệu quả hơn một email chỉ thúc giục mua hàng.</div><h2>Theo dõi để cải thiện</h2><p>Quan sát tỷ lệ mở, tỷ lệ click và số người phản hồi. Nếu một email bị bỏ qua, hãy thử lại tiêu đề, độ dài hoặc CTA thay vì gửi nhiều hơn.</p>`
+      },
+      "marketing-budget": {
+        category: "NGÂN SÁCH",
+        date: "05/08/2026",
+        readTime: "6 phút đọc",
+        title: "Phân bổ ngân sách marketing thế nào khi doanh nghiệp còn nhỏ?",
+        lead: "Ưu tiên đúng giai đoạn của phễu bán hàng giúp ngân sách giới hạn tạo ra dữ liệu và khách hàng tốt hơn.",
+        image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1400&q=86",
+        alt: "Sổ tay và máy tính dùng để lập ngân sách",
+        body: `<h2>Ngân sách phải đi cùng mục tiêu</h2><p>Không có một tỷ lệ cố định phù hợp với mọi doanh nghiệp. Ngân sách nên được quyết định dựa trên mục tiêu doanh thu, biên lợi nhuận, giá trị khách hàng và khả năng xử lý lead.</p><h2>Chia ngân sách theo ba nhóm</h2><ul><li><strong>Kiểm chứng:</strong> Dành phần nhỏ để thử thông điệp, audience và kênh có tiềm năng.</li><li><strong>Tăng trưởng:</strong> Tập trung vào những nhóm đã có tín hiệu chuyển đổi ổn định.</li><li><strong>Dự phòng:</strong> Giữ lại một phần để xử lý mùa vụ, cơ hội mới hoặc thay đổi thị trường.</li></ul><div class="article-note"><strong>Không mở quá nhiều kênh cùng lúc.</strong> Một kênh được theo dõi đủ sâu thường cho bài học giá trị hơn năm kênh chạy với ngân sách quá mỏng.</div><h2>Đặt ngưỡng quyết định</h2><p>Trước khi chạy, hãy thống nhất ngưỡng CPA, số lead tối thiểu và thời gian đánh giá. Nhờ vậy, đội ngũ biết khi nào cần tiếp tục, tối ưu hoặc dừng thay vì quyết định theo cảm xúc.</p>`
+      }
+    };
+
+    const query = new URLSearchParams(window.location.search);
+    const post = posts[query.get("post")] || posts["facebook-ads"];
+    document.title = `${post.title} | POPIT Insights`;
+    document.getElementById("articleCategory").textContent = post.category;
+    document.getElementById("articleDate").textContent = post.date;
+    document.getElementById("articleReadTime").textContent = post.readTime;
+    document.getElementById("articleTitle").textContent = post.title;
+    document.getElementById("articleLead").textContent = post.lead;
+    document.getElementById("articleCover").src = post.image;
+    document.getElementById("articleCover").alt = post.alt;
+    document.getElementById("articleBody").innerHTML = post.body;
+
+    const related = Object.entries(posts).filter(([key]) => key !== (query.get("post") || "facebook-ads"));
+    document.getElementById("relatedPosts").innerHTML = related.slice(0, 3).map(([key, item]) => `<a class="article-related-card" href="article.html?post=${key}"><img src="${item.image}" alt="${item.alt}" loading="lazy"><div><span>${item.category}</span><h3>${item.title}</h3></div></a>`).join("");
+  </script>
+</body>
+</html>

@@ -56,6 +56,29 @@ const observer = new IntersectionObserver(entries => {
 
 document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
 
+const insightCards = [...document.querySelectorAll(".insight-card")];
+const insightMore = document.getElementById("insightMore");
+const insightBatchSize = 3;
+let visibleInsightCount = insightBatchSize;
+
+if (insightCards.length > insightBatchSize) {
+  insightCards.slice(insightBatchSize).forEach(card => card.classList.add("insight-hidden"));
+  insightMore?.addEventListener("click", () => {
+    const nextCards = insightCards.slice(visibleInsightCount, visibleInsightCount + insightBatchSize);
+    nextCards.forEach(card => {
+      card.classList.remove("insight-hidden");
+      observer.observe(card);
+    });
+    visibleInsightCount += nextCards.length;
+    insightMore.setAttribute("aria-expanded", "true");
+    if (visibleInsightCount >= insightCards.length) {
+      insightMore.classList.add("is-hidden");
+    }
+  });
+} else {
+  insightMore?.classList.add("is-hidden");
+}
+
 document.getElementById("leadForm")?.addEventListener("submit", async e => {
   e.preventDefault();
   const message = document.getElementById("formMessage");
