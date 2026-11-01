@@ -24,24 +24,48 @@
         <img class="logo-image" src="assets/popit-logo.svg" alt="POPIT Marketing Solution">
       </a>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Mở menu điều hướng">☰</button>
-
-      <nav class="nav-menu" id="navMenu">
-        <a href="#home">Trang chủ</a>
-        <a href="#pain-points">Vấn đề</a>
-        <a href="#services">Dịch vụ</a>
-        <a href="#pricing">Combo Bảng giá</a>
-        <a href="#process">Quy trình</a>
-        <a href="#case-study">Case Study</a>
-        <a href="#testimonials">Đánh giá</a>
-        <a href="#faq">Hỏi đáp</a>
-        <a href="#insights">Tin tức</a>
+      <button class="nav-menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="navMenu">
+        <span class="nav-menu-icon" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>Mục lục</span>
+        <span class="nav-menu-chevron" aria-hidden="true">⌄</span>
+      </button>
+      <nav class="nav-menu" id="navMenu" aria-label="Điều hướng chính">
+        <a class="nav-link" href="#home">Trang chủ</a>
+        <div class="nav-group">
+          <button class="nav-group-toggle" type="button" aria-expanded="false" aria-controls="productMenu">
+            Sản phẩm <span class="nav-menu-chevron" aria-hidden="true">⌄</span>
+          </button>
+          <div class="nav-submenu" id="productMenu">
+            <a href="#services">Dịch vụ</a>
+            <a href="#pricing">Combo bảng giá</a>
+          </div>
+        </div>
+        <div class="nav-group">
+          <button class="nav-group-toggle" type="button" aria-expanded="false" aria-controls="processMenu">
+            Quy trình <span class="nav-menu-chevron" aria-hidden="true">⌄</span>
+          </button>
+          <div class="nav-submenu" id="processMenu">
+            <a href="#pain-points">Vấn đề</a>
+            <a href="#process">Quy trình</a>
+            <a href="#faq">Hỏi đáp</a>
+          </div>
+        </div>
+        <div class="nav-group">
+          <button class="nav-group-toggle" type="button" aria-expanded="false" aria-controls="resultsMenu">
+            Kết quả <span class="nav-menu-chevron" aria-hidden="true">⌄</span>
+          </button>
+          <div class="nav-submenu" id="resultsMenu">
+            <a href="#testimonials">Đánh giá</a>
+            <a href="#case-study">Case Study</a>
+          </div>
+        </div>
+        <a class="nav-link" href="#insights">Tin tức</a>
       </nav>
 
       <div class="nav-actions">
-        <a class="nav-hotline" href="tel:0866640425" title="Gọi hotline tư vấn trực tiếp">
+        <a class="nav-hotline" href="tel:0345464950" title="Gọi hotline tư vấn trực tiếp">
           <span class="hotline-pulse"></span>
-          <span>0866 640 425</span>
+          <span>034 546 4950</span>
         </a>
         <a class="btn btn-primary nav-cta" href="#contact" data-service-select="Tư vấn chiến lược tổng thể">Nhận tư vấn</a>
       </div>
@@ -295,12 +319,13 @@
                 <div class="platform-badges-row">
                   <span class="platform-badge badge-fb">Facebook</span>
                 </div>
-                <span class="price-tier-tag">TI`ỂU PHÚ HÀO</span>
+                <span class="price-tier-tag">TIỂU PHÚ HÀO</span>
                 <h3>Facebook Cơ Bản</h3>
                 <p class="price-desc">Khởi động kênh Fanpage bán hàng và chạy quảng cáo Facebook.</p>
                 <div class="price-box">
-                  <div class="current-price">2.490.000đ <small>/ tháng</small></div>
-                  <span class="price-savings">Gói khởi động tối ưu</span>
+                  <div class="original-price">2.490.000đ</div>
+                  <div class="current-price">1.990.000đ <small>/ tháng</small></div>
+                  <span class="price-savings">Ưu đãi tiết kiệm 500.000đ/tháng</span>
                 </div>
                 <ul class="price-features-list">
                   <li class="included">Tư vấn, xây dựng hệ thống tuyển bài và công cụ tự động đăng bài</li>
@@ -313,7 +338,7 @@
                   <li class="unavailable">Sản xuất Video TikTok / Video AI</li>
                   <li class="unavailable">Quản trị Website & Landing Page</li>
                 </ul>
-                <button class="btn btn-outline btn-package-select" data-service-select="Tiểu Phú Hào - Facebook (2.490.000 VND)">Đăng ký gói này →</button>
+                <button class="btn btn-outline btn-package-select" data-service-select="Tiểu Phú Hào - Facebook (1.990.000 VND)">Đăng ký gói này →</button>
               </div>
 
               <!-- Card 2: Nhị Phú Hào -->
@@ -326,9 +351,9 @@
                 <h3>Facebook & TikTok</h3>
                 <p class="price-desc">Combo 2 nền tảng lớn nhất giúp tiếp cận khách hàng đa kênh.</p>
                 <div class="price-box">
-                  <div class="original-price">6.380.000đ</div>
-                  <div class="current-price">5.990.000đ <small>/ tháng</small></div>
-                  <span class="price-savings">Tiết kiệm ưu đãi Combo</span>
+                  <div class="original-price">5.980.000đ</div>
+                  <div class="current-price">4.490.000đ <small>/ tháng</small></div>
+                  <span class="price-savings">Tiết kiệm 1.490.000đ (~25%)/tháng</span>
                 </div>
                 <ul class="price-features-list">
                   <li class="included">Tư vấn, xây dựng hệ thống tuyển bài và công cụ tự động đăng bài</li>
@@ -340,7 +365,7 @@
                   <li class="included">Báo cáo định kỳ 1 lần/tháng</li>
                   <li class="unavailable">Quản trị Website chuẩn SEO & Landing page</li>
                 </ul>
-                <button class="btn btn-outline btn-package-select" data-service-select="Nhị Phú Hào - Facebook & TikTok (5.990.000 VND)">Đăng ký gói này →</button>
+                <button class="btn btn-outline btn-package-select" data-service-select="Nhị Phú Hào - Facebook & TikTok (4.490.000 VND)">Đăng ký gói này →</button>
               </div>
 
               <!-- Card 3: Tam Phú Hào (Featured) -->
@@ -357,7 +382,7 @@
                 <div class="price-box">
                   <div class="original-price">10.480.000đ</div>
                   <div class="current-price">6.990.000đ <small>/ tháng</small></div>
-                  <span class="price-savings">Tiết kiệm 35% + Tặng kịch bản viral</span>
+                  <span class="price-savings">Tiết kiệm 3.490.000đ (~33%) + Tặng kịch bản viral</span>
                 </div>
                 <ul class="price-features-list">
                   <li class="included">Tư vấn, xây dựng hệ thống tuyển bài và công cụ tự động đăng bài</li>
@@ -384,9 +409,9 @@
                 <h3>Facebook, TikTok, Website & Video AI</h3>
                 <p class="price-desc">Hệ thống Marketing toàn diện phủ khắp mạng xã hội, Google SEO và Video AI.</p>
                 <div class="price-box">
-                  <div class="original-price">12.500.000đ</div>
-                  <div class="current-price">7.990.000đ <small>/ tháng</small></div>
-                  <span class="price-savings">Trọn gói cho doanh nghiệp</span>
+                  <div class="original-price">12.990.000đ</div>
+                  <div class="current-price">10.990.000đ <small>/ tháng</small></div>
+                  <span class="price-savings">Ưu đãi tiết kiệm 2.000.000đ/tháng</span>
                 </div>
                 <ul class="price-features-list">
                   <li class="included">Tư vấn, xây dựng hệ thống tuyển bài và công cụ tự động đăng bài</li>
@@ -399,7 +424,7 @@
                   <li class="included">Hỗ trợ thiết kế website landing page (không gồm domain/hosting)</li>
                   <li class="included">Báo cáo định kỳ 1 lần/tháng</li>
                 </ul>
-                <button class="btn btn-outline btn-package-select" data-service-select="Đại Phú Hào - Facebook, TikTok, Website & Video AI (7.990.000 VND)">Đăng ký gói Đại Phú Hào →</button>
+                <button class="btn btn-outline btn-package-select" data-service-select="Đại Phú Hào - Facebook, TikTok, Website & Video AI (10.990.000 VND)">Đăng ký gói Đại Phú Hào →</button>
               </div>
             </div>
           </div>
@@ -416,8 +441,9 @@
                 <h3>Dịch Vụ Facebook</h3>
                 <p class="price-desc">Dành cho cá nhân, chủ shop bắt đầu xây dựng kênh Fanpage.</p>
                 <div class="price-box">
-                  <div class="current-price">2.490.000đ <small>/ tháng</small></div>
-                  <span class="price-savings">Nền tảng Facebook</span>
+                  <div class="original-price">2.490.000đ</div>
+                  <div class="current-price">1.990.000đ <small>/ tháng</small></div>
+                  <span class="price-savings">Ưu đãi tiết kiệm 500.000đ/tháng</span>
                 </div>
                 <ul class="price-features-list">
                   <li class="included">Tư vấn, xây dựng hệ thống tuyển bài và công cụ tự động đăng bài</li>
@@ -428,7 +454,7 @@
                   <li class="included">Cài đặt các chỉ số chạy quảng cáo trên nền tảng Facebook</li>
                   <li class="included">Báo cáo 1 lần/tháng</li>
                 </ul>
-                <button class="btn btn-primary btn-package-select" data-service-select="Tiểu Phú Hào - Facebook (2.490.000 VND)">Đăng ký gói Facebook →</button>
+                <button class="btn btn-primary btn-package-select" data-service-select="Tiểu Phú Hào - Facebook (1.990.000 VND)">Đăng ký gói Facebook →</button>
               </div>
 
               <!-- Tiểu Phú Hào TikTok -->
@@ -440,8 +466,9 @@
                 <h3>Dịch Vụ TikTok</h3>
                 <p class="price-desc">Xây dựng kênh TikTok và sản xuất video tiếp cận khách hàng mới.</p>
                 <div class="price-box">
-                  <div class="current-price">3.890.000đ <small>/ tháng</small></div>
-                  <span class="price-savings">Nền tảng TikTok</span>
+                  <div class="original-price">3.490.000đ</div>
+                  <div class="current-price">2.890.000đ <small>/ tháng</small></div>
+                  <span class="price-savings">Ưu đãi tiết kiệm 600.000đ/tháng</span>
                 </div>
                 <ul class="price-features-list">
                   <li class="included">Tư vấn, xây dựng hệ thống tuyển bài và công cụ tự động đăng bài</li>
@@ -452,7 +479,7 @@
                   <li class="included">Cài đặt các chỉ số chạy quảng cáo trên nền tảng TikTok</li>
                   <li class="included">Báo cáo 1 lần/tháng</li>
                 </ul>
-                <button class="btn btn-outline btn-package-select" data-service-select="Tiểu Phú Hào - TikTok (3.890.000 VND)">Đăng ký gói TikTok →</button>
+                <button class="btn btn-outline btn-package-select" data-service-select="Tiểu Phú Hào - TikTok (2.890.000 VND)">Đăng ký gói TikTok →</button>
               </div>
             </div>
           </div>
@@ -470,9 +497,9 @@
                 <h3>Nhị Phú Hào (Facebook & TikTok)</h3>
                 <p class="price-desc">Tích hợp đồng bộ cả 2 mạng xã hội có lượng người dùng lớn nhất Việt Nam.</p>
                 <div class="price-box">
-                  <div class="original-price">6.380.000đ</div>
-                  <div class="current-price">5.990.000đ <small>/ tháng</small></div>
-                  <span class="price-savings">Tiết kiệm 390.000đ/tháng</span>
+                  <div class="original-price">5.980.000đ</div>
+                  <div class="current-price">4.490.000đ <small>/ tháng</small></div>
+                  <span class="price-savings">Tiết kiệm 1.490.000đ (~25%)/tháng</span>
                 </div>
                 <ul class="price-features-list">
                   <li class="included">Tư vấn, xây dựng hệ thống tuyển bài và công cụ tự động đăng bài</li>
@@ -484,7 +511,7 @@
                   <li class="included">Cài đặt các chỉ số chạy quảng cáo trên nền tảng Facebook, TikTok</li>
                   <li class="included">Báo cáo đo lường chi tiết 1 lần/tháng</li>
                 </ul>
-                <button class="btn btn-primary btn-package-select" data-service-select="Nhị Phú Hào - Facebook & TikTok (5.990.000 VND)">Đăng ký gói Nhị Phú Hào ngay →</button>
+                <button class="btn btn-primary btn-package-select" data-service-select="Nhị Phú Hào - Facebook & TikTok (4.490.000 VND)">Đăng ký gói Nhị Phú Hào ngay →</button>
               </div>
             </div>
           </div>
@@ -505,7 +532,7 @@
                 <div class="price-box">
                   <div class="original-price">10.480.000đ</div>
                   <div class="current-price">6.990.000đ <small>/ tháng</small></div>
-                  <span class="price-savings">Tiết kiệm tới 3.490.000đ/tháng</span>
+                  <span class="price-savings">Tiết kiệm 3.490.000đ (~33%)</span>
                 </div>
                 <ul class="price-features-list">
                   <li class="included">Tư vấn, xây dựng hệ thống tuyển bài và công cụ tự động đăng bài</li>
@@ -537,9 +564,9 @@
                 <h3>Đại Phú Hào (Facebook, TikTok, Website & Video AI)</h3>
                 <p class="price-desc">Giải pháp phòng Marketing thuê ngoài phủ sóng mạng xã hội, Website và Video AI.</p>
                 <div class="price-box">
-                  <div class="original-price">12.500.000đ</div>
-                  <div class="current-price">7.990.000đ <small>/ tháng</small></div>
-                  <span class="price-savings">Bao gồm thiết kế Landing Page</span>
+                  <div class="original-price">12.990.000đ</div>
+                  <div class="current-price">10.990.000đ <small>/ tháng</small></div>
+                  <span class="price-savings">Ưu đãi tiết kiệm 2.000.000đ/tháng</span>
                 </div>
                 <ul class="price-features-list">
                   <li class="included">Tư vấn, xây dựng hệ thống tuyển bài và công cụ tự động đăng bài</li>
@@ -552,7 +579,7 @@
                   <li class="included">Hỗ trợ thiết kế website landing page (không bao gồm domain và hosting)</li>
                   <li class="included">Báo cáo định kỳ 1 lần/tháng</li>
                 </ul>
-                <button class="btn btn-primary btn-package-select" style="background: linear-gradient(135deg, #10b981, #059669);" data-service-select="Đại Phú Hào - Facebook, TikTok, Website & Video AI (7.990.000 VND)">Đăng ký gói Đại Phú Hào ngay →</button>
+                <button class="btn btn-primary btn-package-select" style="background: linear-gradient(135deg, #10b981, #059669);" data-service-select="Đại Phú Hào - Facebook, TikTok, Website & Video AI (10.990.000 VND)">Đăng ký gói Đại Phú Hào ngay →</button>
               </div>
             </div>
           </div>
@@ -572,7 +599,7 @@
       <div class="container">
         <div class="section-heading center reveal">
           <span class="section-kicker light">QUY TRÌNH 4 BƯỚC CHUYÊN NGHIỆP</span>
-          <h2>Biến mục tiêu kinh doanh thành <strong>tăng trưởng thực tế.</strong></h2>
+          <h2><strong>Biến mục tiêu kinh doanh thành</strong> <strong>tăng trưởng thực tế.</strong></h2>
           <p>Mỗi chiến dịch tại POPIT đều được vận hành theo quy trình khoa học, đo lường liên tục và tối ưu hóa theo dữ liệu thực tế.</p>
         </div>
 
@@ -841,7 +868,7 @@
           <span class="section-kicker">HỎI ĐÁP THƯỜNG GẶP</span>
           <h2>Giải đáp thắc mắc <strong>trước khi bạn quyết định.</strong></h2>
           <p>Nếu bạn còn bất kỳ câu hỏi nào chưa được giải đáp, hãy liên hệ ngay với chuyên gia POPIT để được tư vấn 1-1 miễn phí.</p>
-          <a class="btn btn-secondary" href="tel:0866640425">Gọi tư vấn trực tiếp 0866 640 425</a>
+          <a class="btn btn-secondary" href="tel:0345464950">Gọi tư vấn trực tiếp 034 546 4950</a>
         </div>
 
         <div class="faq-list reveal delay-1">
@@ -909,18 +936,18 @@
           </p>
 
           <div class="contact-channels">
-            <a class="contact-channel-item" href="tel:0866640425">
+            <a class="contact-channel-item" href="tel:0345464950">
               <span class="contact-channel-icon">☎</span>
               <div>
                 <small>Hotline tư vấn 24/7</small>
-                <b>0866 640 425</b>
+                <b>034 546 4950</b>
               </div>
             </a>
-            <a class="contact-channel-item" href="mailto:hello@popit.vn">
+            <a class="contact-channel-item" href="mailto:duynguyen15904@gmail.com">
               <span class="contact-channel-icon">✉</span>
               <div>
                 <small>Email hợp tác</small>
-                <b>hello@popit.vn</b>
+                <b>duynguyen15904@gmail.com</b>
               </div>
             </a>
             <div class="contact-channel-item">
@@ -957,11 +984,11 @@
               <label for="formService">Gói dịch vụ bạn quan tâm</label>
               <select id="formService" name="service">
                 <option value="Tư vấn chiến lược tổng thể">-- Chọn gói dịch vụ mong muốn --</option>
-                <option value="Tiểu Phú Hào - Facebook (2.490.000 VND)">Tiểu Phú Hào - Facebook (2.490.000 VND/tháng)</option>
-                <option value="Tiểu Phú Hào - TikTok (3.890.000 VND)">Tiểu Phú Hào - TikTok (3.890.000 VND/tháng)</option>
-                <option value="Nhị Phú Hào - Facebook & TikTok (5.990.000 VND)">Nhị Phú Hào - Facebook & TikTok (5.990.000 VND/tháng)</option>
+                <option value="Tiểu Phú Hào - Facebook (1.990.000 VND)">Tiểu Phú Hào - Facebook (1.990.000 VND/tháng)</option>
+                <option value="Tiểu Phú Hào - TikTok (2.890.000 VND)">Tiểu Phú Hào - TikTok (2.890.000 VND/tháng)</option>
+                <option value="Nhị Phú Hào - Facebook & TikTok (4.490.000 VND)">Nhị Phú Hào - Facebook & TikTok (4.490.000 VND/tháng)</option>
                 <option value="Tam Phú Hào - Facebook, TikTok & Video AI (6.990.000 VND)">Tam Phú Hào - FB, TikTok & Video AI (6.990.000 VND/tháng)</option>
-                <option value="Đại Phú Hào - Facebook, TikTok, Website & Video AI (7.990.000 VND)">Đại Phú Hào - FB, TikTok, Website & Video AI (7.990.000 VND/tháng)</option>
+                <option value="Đại Phú Hào - Facebook, TikTok, Website & Video AI (10.990.000 VND)">Đại Phú Hào - FB, TikTok, Website & Video AI (10.990.000 VND/tháng)</option>
                 <option value="Tư vấn chiến lược tổng thể">Tư vấn chiến lược đa kênh theo yêu cầu riêng</option>
               </select>
             </div>
@@ -1153,8 +1180,8 @@
       <div class="footer-col">
         <h4>LIÊN HỆ VỚI POPIT</h4>
         <ul class="footer-contact-list">
-          <li>Hotline: <strong style="color: #fff;">0866 640 425</strong></li>
-          <li>Email: <strong style="color: #fff;">hello@popit.vn</strong></li>
+          <li>Hotline: <strong style="color: #fff;">034 546 4950</strong></li>
+          <li>Email: <strong style="color: #fff;">duynguyen15904@gmail.com</strong></li>
           <li>Thời gian làm việc: 8:30 - 21:30 (Thứ 2 - CN)</li>
           <li>Trụ sở: Hà Nội, Việt Nam</li>
         </ul>
@@ -1169,11 +1196,11 @@
 
   <!-- Floating Contact Action Bar -->
   <div class="floating-contact-bar">
-    <a class="float-btn float-hotline" href="tel:0866640425" title="Gọi Hotline ngay">☎</a>
-    <a class="float-btn float-zalo" href="https://zalo.me/0866640425" target="_blank" rel="noopener noreferrer" title="Chat qua Zalo">
+    <a class="float-btn float-hotline" href="tel:0345464950" title="Gọi Hotline ngay">☎</a>
+    <a class="float-btn float-zalo" href="https://zalo.me/0345464950" target="_blank" rel="noopener noreferrer" title="Chat qua Zalo">
       <img class="float-brand-icon" src="https://cdn.simpleicons.org/zalo/ffffff" alt="" aria-hidden="true">
     </a>
-    <a class="float-btn float-facebook" href="https://www.facebook.com/popmarketingandadvertising?locale=vi_VN" target="_blank" rel="noopener noreferrer" title="Truy cập fanpage POP Marketing and Advertising">
+    <a class="float-btn float-facebook" href="https://www.facebook.com/profile.php?id=61559927832590" target="_blank" rel="noopener noreferrer" title="Truy cập fanpage POP Marketing and Advertising">
       <img class="float-brand-icon" src="https://cdn.simpleicons.org/facebook/ffffff" alt="" aria-hidden="true">
     </a>
     <button class="float-btn float-consult" id="floatConsultBtn" title="Đăng ký tư vấn ngay">📝</button>
@@ -1228,11 +1255,11 @@
               <label for="modalService">Dịch vụ bạn quan tâm</label>
               <select id="modalService" name="service">
                 <option value="Tư vấn chiến lược tổng thể">-- Chọn gói dịch vụ mong muốn --</option>
-                <option value="Tiểu Phú Hào - Facebook (2.490.000 VND)">Tiểu Phú Hào - Facebook (2.490.000 VND/tháng)</option>
-                <option value="Tiểu Phú Hào - TikTok (3.890.000 VND)">Tiểu Phú Hào - TikTok (3.890.000 VND/tháng)</option>
-                <option value="Nhị Phú Hào - Facebook & TikTok (5.990.000 VND)">Nhị Phú Hào - Facebook & TikTok (5.990.000 VND/tháng)</option>
+                <option value="Tiểu Phú Hào - Facebook (1.990.000 VND)">Tiểu Phú Hào - Facebook (1.990.000 VND/tháng)</option>
+                <option value="Tiểu Phú Hào - TikTok (2.890.000 VND)">Tiểu Phú Hào - TikTok (2.890.000 VND/tháng)</option>
+                <option value="Nhị Phú Hào - Facebook & TikTok (4.490.000 VND)">Nhị Phú Hào - Facebook & TikTok (4.490.000 VND/tháng)</option>
                 <option value="Tam Phú Hào - Facebook, TikTok & Video AI (6.990.000 VND)">Tam Phú Hào - FB, TikTok & Video AI (6.990.000 VND/tháng)</option>
-                <option value="Đại Phú Hào - Facebook, TikTok, Website & Video AI (7.990.000 VND)">Đại Phú Hào - FB, TikTok, Website & Video AI (7.990.000 VND/tháng)</option>
+                <option value="Đại Phú Hào - Facebook, TikTok, Website & Video AI (10.990.000 VND)">Đại Phú Hào - FB, TikTok, Website & Video AI (10.990.000 VND/tháng)</option>
                 <option value="Tư vấn chiến lược tổng thể">Tư vấn chiến lược đa kênh tổng thể</option>
               </select>
             </div>

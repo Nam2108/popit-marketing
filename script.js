@@ -27,14 +27,59 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   menuToggle?.addEventListener("click", () => {
-    navMenu?.classList.toggle("open");
+    const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+    menuToggle.setAttribute("aria-expanded", String(!isOpen));
+    navMenu?.classList.toggle("open", !isOpen);
   });
 
-  // Đóng mobile menu khi bấm vào link
+  const closeNavGroups = except => {
+    document.querySelectorAll(".nav-group").forEach(group => {
+      if (group !== except) {
+        group.classList.remove("open");
+        group.querySelector(".nav-group-toggle")?.setAttribute("aria-expanded", "false");
+      }
+    });
+  };
+
+  document.querySelectorAll(".nav-group-toggle").forEach(button => {
+    button.addEventListener("click", () => {
+      const group = button.closest(".nav-group");
+      const isOpen = button.getAttribute("aria-expanded") === "true";
+      closeNavGroups(group);
+      group?.classList.toggle("open", !isOpen);
+      button.setAttribute("aria-expanded", String(!isOpen));
+    });
+  });
+
   document.querySelectorAll(".nav-menu a").forEach(link => {
     link.addEventListener("click", () => {
       navMenu?.classList.remove("open");
+      menuToggle?.setAttribute("aria-expanded", "false");
+      closeNavGroups();
     });
+  });
+
+  document.addEventListener("click", event => {
+    if (!event.target.closest(".nav-menu") && !event.target.closest("#menuToggle")) {
+      navMenu?.classList.remove("open");
+      menuToggle?.setAttribute("aria-expanded", "false");
+      closeNavGroups();
+    }
+  });
+
+  document.addEventListener("keydown", event => {
+    if (event.key === "Escape") {
+      const openGroup = document.querySelector(".nav-group.open");
+      if (openGroup) {
+        const groupToggle = openGroup.querySelector(".nav-group-toggle");
+        closeNavGroups();
+        groupToggle?.focus();
+      } else if (menuToggle?.getAttribute("aria-expanded") === "true") {
+        navMenu?.classList.remove("open");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.focus();
+      }
+    }
   });
 
   // Back to top
@@ -312,11 +357,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ==================== 7. LIVE SOCIAL PROOF TOAST (FOMO NOTIFICATION) ====================
   const mockLeads = [
-    { name: "Anh Hoàng", loc: "Hà Nội", action: "vừa đăng ký gói Tiểu Phú Hào - Facebook (2.490.000đ/tháng)", time: "1 phút trước" },
-    { name: "Chị Mai", loc: "TP. Hồ Chí Minh", action: "vừa đăng ký gói Tiểu Phú Hào - TikTok (3.890.000đ/tháng)", time: "3 phút trước" },
-    { name: "Anh Tuấn", loc: "Đà Nẵng", action: "vừa chọn gói Nhị Phú Hào - Facebook & TikTok (5.990.000đ/tháng)", time: "5 phút trước" },
+    { name: "Anh Hoàng", loc: "Hà Nội", action: "vừa đăng ký gói Tiểu Phú Hào - Facebook (1.990.000đ/tháng)", time: "1 phút trước" },
+    { name: "Chị Mai", loc: "TP. Hồ Chí Minh", action: "vừa đăng ký gói Tiểu Phú Hào - TikTok (2.890.000đ/tháng)", time: "3 phút trước" },
+    { name: "Anh Tuấn", loc: "Đà Nẵng", action: "vừa chọn gói Nhị Phú Hào - Facebook & TikTok (4.490.000đ/tháng)", time: "5 phút trước" },
     { name: "Chị Thu Hà", loc: "Hải Phòng", action: "vừa đăng ký gói Tam Phú Hào - Facebook, TikTok & Video AI (6.990.000đ/tháng)", time: "2 phút trước" },
-    { name: "Anh Quốc Bảo", loc: "Cần Thơ", action: "vừa đăng ký gói Đại Phú Hào - Facebook, TikTok, Website & Video AI (7.990.000đ/tháng)", time: "6 phút trước" }
+    { name: "Anh Quốc Bảo", loc: "Cần Thơ", action: "vừa đăng ký gói Đại Phú Hào - Facebook, TikTok, Website & Video AI (10.990.000đ/tháng)", time: "6 phút trước" }
   ];
 
   let toastIndex = 0;
